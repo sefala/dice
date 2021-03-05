@@ -1,5 +1,5 @@
 window.login = "";
-const gameAddress = "0xa4886d906046b241f9ab4f018447ac2c6f78fd26";
+const gameAddress = "0xE291d8C352F164EB7393A6089B6329290E6fbeC1";
 const inputs = ["betNumberNumber"];
 
 const formatter = new Intl.NumberFormat("en-US", {
@@ -23,7 +23,7 @@ const loadWeb3 = async () => {
     window.web3 = new Web3(window.ethereum);
 
     window.web3WSS = new Web3(
-      new Web3.providers.WebsocketProvider("wss://bsc.slime.finance/testnet")
+      new Web3.providers.WebsocketProvider("wss://bsc.slime.finance/mainet")
     );
     return true;
   }
