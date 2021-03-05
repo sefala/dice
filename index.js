@@ -108,7 +108,7 @@ const getBalance = async () => {
 
 const approve = () =>
   window.cToken.methods
-    .approve(gameAddress, window.settings.maxBet * 10)
+    .approve(gameAddress, window.settings.maxBet)
     .send({ from: window.login })
     .then(validateAllowance)
     .catch(console.log);
