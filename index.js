@@ -23,7 +23,7 @@ const loadWeb3 = async () => {
     window.web3 = new Web3(window.ethereum);
 
     window.web3WSS = new Web3(
-      new Web3.providers.WebsocketProvider("wss://bsc.slime.finance/mainnet")
+      new Web3.providers.WebsocketProvider("wss://bsc-ws-node.nariox.org:443")
     );
     return true;
   }
